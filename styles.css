@@ -72,16 +72,15 @@ body {
 
 .profile {
   display: grid;
-  grid-template-columns: 310px minmax(0, 560px);
-  gap: 52px;
+  grid-template-columns: 214px minmax(0, 620px);
+  gap: 58px;
   align-items: start;
   justify-content: start;
-  margin-left: 0;
 }
 
 .profile-text {
   display: flex;
-  min-height: 198px;
+  min-height: 238px;
   flex-direction: column;
   grid-column: 2;
   grid-row: 1;
@@ -89,15 +88,15 @@ body {
 
 .profile-photo {
   display: block;
-  width: 300px;
-  height: auto;
-  aspect-ratio: 2830 / 1800;
+  width: 190px;
+  height: 238px;
   border: 1px solid var(--rule);
   background: var(--paper-bg);
   grid-column: 1;
   grid-row: 1;
-  margin-left: 10px;
-  object-fit: contain;
+  margin-left: 18px;
+  object-fit: cover;
+  object-position: center;
 }
 
 h1,
@@ -110,8 +109,8 @@ p {
 h1 {
   margin-bottom: 1rem;
   color: #000000;
-  font-family: var(--name-font);
-  font-size: clamp(1.86rem, 3.6vw, 2.10rem);
+  font-family:var(--name-font); 
+  font-size: clamp(2.15rem, 4.6vw, 2.85rem);
   font-weight: 500;
   letter-spacing: 0.012em;
   line-height: 0.95;
@@ -141,7 +140,7 @@ h1 {
 }
 
 .interests {
-  max-width: none;
+  max-width: 680px;
   margin-top: auto;
   margin-bottom: 0;
 }
@@ -235,7 +234,6 @@ a:focus {
   .profile {
     grid-template-columns: 1fr;
     gap: 24px;
-    margin-left: 0;
   }
 
   .profile-text,
@@ -245,8 +243,8 @@ a:focus {
   }
 
   .profile-photo {
-    width: min(100%, 300px);
-    height: auto;
+    width: 168px;
+    height: 210px;
   }
 
   .links span {
